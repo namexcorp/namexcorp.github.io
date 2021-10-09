@@ -1,0 +1,133 @@
+*{
+    margin: 0px;
+    padding: 0px;
+  }
+  
+  body{
+    max-width: 1500px;
+    margin: auto;
+    background: rgb(128, 208, 223);
+  }
+  
+  nav{
+    display: flex;
+    justify-content: space-between;
+    max-width: 95%;
+    margin: 20px auto;
+    align-items: center;
+  }
+  
+  nav .left img{
+    width: 190px;
+  }
+  
+  nav .right a{
+    color: white;
+    text-decoration: none;
+    border: 1px solid white;
+    padding: 10px;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+  
+  .container{
+    margin-top: 80px;
+    text-align: center;
+  }
+  
+  .container .title h1{
+    color: white;
+    font-size: 40px;
+    letter-spacing: 2px;
+  }
+  
+  .container .title p{
+    color: white;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-size: 18px;
+  }
+  
+  .container form{
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .container form .top, .container form .bottom{
+    display: flex;
+    justify-content: center;
+  }
+  
+  .container form .top input, .container form .bottom input{
+    margin: 10px;
+    padding: 15px;
+    width: 280px;
+    border: none;
+    box-sizing: border-box;
+  }
+  
+  .container form select{
+    width: 583px;
+    padding: 15px;
+    margin: 10px;
+    color: #888;
+    box-sizing: border-box;
+    align-self: center;
+  }
+  
+  .container form > input{
+    color: white;
+    border: none;
+    background: rgb(99, 99, 245);
+    padding: 15px;
+    box-sizing: border-box;
+    width: 583px;
+    align-self: center;
+    margin-top: -10px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  
+  .container form p{
+    color: white;
+    margin: 20px;
+  }
+  
+  .container form p a{
+    color: white;
+  }
+  
+  @media (max-width: 600px){
+    .container .title h1{
+      font-size: 34px;
+      letter-spacing: 0px;
+    }
+    .container form select{
+      width: 96.5%;
+    }
+    .container form > input{
+      width: 96.5%;
+    }
+  }
+  
+  @media (max-width: 445px){
+    .container .title h1{
+      max-width: 80%;
+      margin: auto;
+    }
+    .container .title p{
+      max-width: 90%;
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 30px;
+      margin-top: 20px;
+    }
+    .container form .top, .container form .bottom{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .container form .top input, .container form .bottom input{
+      width: 96%;
+    }
+  }
